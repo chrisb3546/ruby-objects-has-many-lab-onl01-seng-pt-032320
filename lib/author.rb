@@ -14,17 +14,17 @@ def posts
 end 
 end 
 
-def add_song(song)
-  song.artist = self
+def add_post(post)
+  post.author = self
 end 
 
-def add_song_by_name(song_name)
-  singer = Song.new(song_name)
-  add_song(singer)
+def add_post_by_name(post_name)
+  writer = Post.new(post_name)
+  add_post(writer)
 end 
 
-def self.song_count
-  Song.all.length
+def self.post_count
+  Post.all.length
 end 
   
 
