@@ -7,10 +7,10 @@ def initialize(name)
   #@songs = []
 end 
 
-#artist = Artist.new(name)
-def songs 
-  Song.all.select do |song|
-    song.artist == self
+
+def posts
+  Post.all.select do |post|
+    post.author == self
 end 
 end 
 
