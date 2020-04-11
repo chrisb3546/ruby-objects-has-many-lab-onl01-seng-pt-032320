@@ -18,7 +18,7 @@ def add_post(post)
   post.author = self
 end 
 
-def add_post_by_name(post_name)
+def add_post_by_title(post_title)
   writer = Post.new(post_name)
   add_post(writer)
 end 
